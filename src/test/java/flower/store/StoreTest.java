@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class StoreTest {
-    private Store store;
     private static final double SEPAL_LENGTH = 3.5;
     private static final double PRICE = 50;
+    private Store store;
 
     @BeforeEach
     public void init() {
