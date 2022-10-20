@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Assertions;
 
 public class StoreTest {
     private Store store;
-    private static final double sepalLength = 3.5;
-    private static final double price = 50;
+    private static final double SEPAL_LENGTH = 3.5;
+    private static final double PRICE = 50;
 
     @BeforeEach
     public void init() {
@@ -17,11 +17,11 @@ public class StoreTest {
 
     @Test
     public void testPrice() {
-        Flower newFlower = new Flower(sepalLength, FlowerColor.RED,
-                price, FlowerType.ROSE);
-        double sepal_Flower = newFlower.getSepalLength();
+        Flower newFlower = new Flower(SEPAL_LENGTH, FlowerColor.RED,
+                PRICE, FlowerType.ROSE);
+        double sepalFlower = newFlower.getSepalLength();
         store.addFlower(newFlower);
         double sepal = (store.search(newFlower)).getSepalLength();
-        Assertions.assertEquals(sepal_Flower, sepal);
+        Assertions.assertEquals(sepalFlower, sepal);
     }
 }
