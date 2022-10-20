@@ -26,7 +26,8 @@ public class Store {
                 continue;
             }
             String color = searchFlower.getColor();
-            if ((color != null) && (!color.equals("")) && (!color.equals(flower.getColor()))) {
+            if ((color != null) && (!color.equals("")) &&
+                    (!color.equals(flower.getColor()))) {
                 continue;
             }
             return flower;
